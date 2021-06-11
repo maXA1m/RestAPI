@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NetCoreApi.Data.Model\NetCoreApi.Data.Model.csproj" />
+    <ProjectReference Include="..\NetCoreApi.Data.Access\NetCoreApi.Data.Access.csproj" />
+    <ProjectReference Include="..\NetCoreApi.Model\NetCoreApi.Model.csproj" />
+    <ProjectReference Include="..\NetCoreApi.Common\NetCoreApi.Common.csproj" />
+    <ProjectReference Include="..\NetCoreApi.Security\NetCoreApi.Security.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.2" />
+  </ItemGroup>
+</Project>

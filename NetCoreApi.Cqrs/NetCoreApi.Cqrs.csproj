@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Handlers\" />
+    <Folder Include="Commands\" />
+    <Folder Include="Commands\Items\" />
+    <Folder Include="Commands\Orders\" />
+    <Folder Include="Commands\Users\" />
+    <Folder Include="Handlers\Items\" />
+    <Folder Include="Handlers\Orders\" />
+    <Folder Include="Handlers\Users\" />
+    <Folder Include="Queries\" />
+    <Folder Include="Queries\Items\" />
+    <Folder Include="Queries\Orders\" />
+    <Folder Include="Queries\Users\" />
+    <Folder Include="Handlers\Common\" />
+    <Folder Include="Queries\Common\" />
+    <Folder Include="Commands\Common\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetCoreApi.Data.Model\NetCoreApi.Data.Model.csproj" />
+    <ProjectReference Include="..\NetCoreApi.Data.Access\NetCoreApi.Data.Access.csproj" />
+    <ProjectReference Include="..\NetCoreApi.Model\NetCoreApi.Model.csproj" />
+    <ProjectReference Include="..\NetCoreApi.Common\NetCoreApi.Common.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.2" />
+  </ItemGroup>
+</Project>

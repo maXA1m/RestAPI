@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  netcoreapi:
+    image: ${DOCKER_REGISTRY-}netcoreapi
+    build:
+      context: .
+      dockerfile: NetCoreApi/Dockerfile
